@@ -19,6 +19,8 @@ public class Editor3 {
 		Color[][] sourceImage = Runigram.read(source);
 		Color[][] targetImage = Runigram.read(target);
 		Runigram.setCanvas(sourceImage);
+		Runigram.display(sourceImage);
 		Runigram.morph(sourceImage, targetImage, n);
+		StdDraw.pause(3000);
 	}
 }
